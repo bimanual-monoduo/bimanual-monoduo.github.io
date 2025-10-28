@@ -3,7 +3,7 @@ import subprocess
 import os
 
 # Input video path
-input_path = "./static/videos/folding_1080x1080-10391.mp4"
+input_path = "./static/videos/zipping_rollout_1080x1080_2x-9231.mp4"
 
 # Automatically generate reshaped and web-playable paths
 base_name, ext = os.path.splitext(input_path)
