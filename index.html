@@ -83,8 +83,7 @@
                 </span>
                 <!-- Video Link. -->
                 <span class="link-block">
-                  <a href="/"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <a href="/" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-youtube"></i>
                     </span>
@@ -101,7 +100,7 @@
                   </a>
                 </span> -->
                 <!-- Dataset Link. -->
-                  
+
               </div>
 
             </div>
@@ -280,7 +279,7 @@
               human arm to the target robot.
             </p>
             <p>
-              Rollout videos on policy are shown below. 
+              Rollout videos on policy are shown below.
             </p>
           </div>
         </div>
@@ -289,13 +288,25 @@
   </section>
 
 
+  <!-- Rollout videos -->
+  
 
-  <section class="hero is-light is-small">
+  <!-- Results -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Title -->
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Results</h2>
+      </div>
+    </div>
+    <br>
+    <section class="hero is-light is-small">
     <div class="hero-body">
       <div class="container">
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-steve">
-            <video id="steve" autoplay controls muted loop playsinline width="1080" height="720" style="object-fit: fill;">
+            <video id="steve" autoplay controls muted loop playsinline width="1080" height="720"
+              style="object-fit: fill;">
               <source src="./static/videos/bag_rollout_1080x720_web.mp4" type="video/mp4">
             </video>
           </div>
@@ -325,9 +336,35 @@
     </div>
   </section>
 
+    <br>
+
+    <!-- Text block -->
+    <div class="container is-max-desktop"> <!-- add spacing -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+            <p>
+              Each policy is evaluated on five manipulation tasks in a zero-shot
+transfer setting from Franka-human demos to a bimanual UR5e. We collect and train on 200 Franka-human demos per task. 
+The results are shown below. The following show that MonoDuo is able to effectively bridge
+both the visual and physical gaps among different robots and
+human, allowing one to learn bimanual policies when only a
+single-arm robot is available.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
 
   <section class="section">
     <div class="container is-max-desktop">
+      <div class="container has-text-centered">
+      <img src="./static/images/table1.png" class="overview-image" alt="MonoDuo 5-task image" />
+    </div>
 
       <div class="columns is-centered">
 
@@ -336,8 +373,7 @@
           <div class="content">
             <h2 class="title is-3">Results</h2>
             <p>
-              Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-              would be impossible without nerfies since it would require going through a wall.
+              TODO
             </p>
             <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
@@ -348,12 +384,11 @@
 
         <!-- Matting. -->
         <div class="column">
-          <h2 class="title is-3">Matting</h2>
+          <h2 class="title is-3">Results</h2>
           <div class="columns is-centered">
             <div class="column content">
               <p>
-                As a byproduct of our method, we can also solve the matting problem by ignoring
-                samples that fall outside of a bounding box during rendering.
+                TODO
               </p>
               <video id="matting-video" controls playsinline height="100%">
                 <source src="./static/videos/matting.mp4" type="video/mp4">
@@ -365,64 +400,11 @@
       </div>
       <!--/ Matting. -->
 
-      <!-- Animation. -->
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Animation</h2>
 
-          <!-- Interpolating. -->
-          <h3 class="title is-4">Interpolating states</h3>
-          <div class="content has-text-justified">
-            <p>
-              We can also animate the scene by interpolating the deformation latent codes of two input
-              frames. Use the slider here to linearly interpolate between the left frame and the right
-              frame.
-            </p>
-          </div>
-          <div class="columns is-vcentered interpolation-panel">
-            <div class="column is-3 has-text-centered">
-              <img src="./static/images/interpolate_start.jpg" class="interpolation-image"
-                alt="Interpolate start reference image." />
-              <p>Start Frame</p>
-            </div>
-            <div class="column interpolation-video-column">
-              <div id="interpolation-image-wrapper">
-                Loading...
-              </div>
-              <input class="slider is-fullwidth is-large is-info" id="interpolation-slider" step="1" min="0" max="100"
-                value="0" type="range">
-            </div>
-            <div class="column is-3 has-text-centered">
-              <img src="./static/images/interpolate_end.jpg" class="interpolation-image"
-                alt="Interpolation end reference image." />
-              <p class="is-bold">End Frame</p>
-            </div>
-          </div>
-          <br />
-          <!--/ Interpolating. -->
-
-          <!-- Re-rendering. -->
-          <h3 class="title is-4">Re-rendering the input video</h3>
-          <div class="content has-text-justified">
-            <p>
-              Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-              viewpoint such as a stabilized camera by playing back the training deformations.
-            </p>
-          </div>
-          <div class="content has-text-centered">
-            <video id="replay-video" controls muted preload playsinline width="75%">
-              <source src="./static/videos/replay.mp4" type="video/mp4">
-            </video>
-          </div>
-          <!--/ Re-rendering. -->
-
-        </div>
-      </div>
-      <!--/ Animation. -->
 
 
       <!-- Concurrent Work. -->
-      <div class="columns is-centered">
+      <!-- <div class="columns is-centered">
         <div class="column is-full-width">
           <h2 class="title is-3">Related Links</h2>
 
@@ -452,14 +434,14 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
       <!--/ Concurrent Work. -->
 
     </div>
   </section>
 
 
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{park2021nerfies,
@@ -469,30 +451,30 @@
   year      = {2021},
 }</code></pre>
     </div>
-  </section>
+  </section> -->
 
 
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+        <!-- <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
           <i class="fas fa-file-pdf"></i>
         </a>
         <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
           <i class="fab fa-github"></i>
-        </a>
+        </a> -->
       </div>
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="content">
-            <p>
+            <!-- <p>
               This website is licensed under a <a rel="license"
                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
                 Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
+            </p> -->
             <p>
-              Template code from <a href="https://github.com/nerfies/nerfies.github.io">here
-                </a> 
+              Template: <a href="https://github.com/nerfies/nerfies.github.io">Nerfies
+              </a>
             </p>
           </div>
         </div>
