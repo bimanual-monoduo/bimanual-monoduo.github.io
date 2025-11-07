@@ -26,7 +26,6 @@
 </head>
 
 <body>
-
   <!-- Intro -->
   <section class="hero">
     <div class="hero-body">
@@ -111,7 +110,7 @@
   </section>
 
   <!-- 5 task fig & desc -->
-  <section class="hero teaser">
+  <section class="hero teaser" style="margin-bottom: 0; padding-bottom: 1rem;">
     <div class="container is-max-desktop">
       <div class="hero-body p-4">
         <img src="./static/images/fig1v5.png" class="interpolation-image" alt="MonoDuo 5-task image" />
@@ -123,7 +122,7 @@
   </section>
 
   <!-- Abstract  -->
-  <section class="section">
+  <section>
     <div class="container is-max-desktop">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
@@ -217,6 +216,10 @@
   <section class="hero is-light is-small">
     <div class="hero-body">
       <div class="container">
+        <div class="has-text-centered mb-4">
+          <h2 class="title is-4"> Demonstration Examples </h2>
+          <p class="subtitle is-6">Examples of our human-robot data collection across various tasks.</p>
+        </div>
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-steve">
             <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
@@ -289,10 +292,10 @@
 
 
   <!-- Rollout videos -->
-  
+
 
   <!-- Results -->
-  <section class="section">
+  <section>
     <div class="container is-max-desktop">
       <!-- Title -->
       <div class="columns is-centered has-text-centered">
@@ -301,101 +304,110 @@
     </div>
     <br>
     <section class="hero is-light is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item item-steve">
-            <video id="steve" autoplay controls muted loop playsinline width="1080" height="720"
-              style="object-fit: fill;">
-              <source src="./static/videos/bag_rollout_1080x720_web.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-chair-tp">
-            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/box_rollout_1080x1080-9252_1080x720_web.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-fullbody">
-            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/folding_1080x1080-10391_1080x720_web.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-blueshirt">
-            <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/handover_rollout_1080x1080_2x-10559_1080x720_web.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-mask">
-            <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/zipping_rollout_1080x1080_2x-9231_1080x720_web.mp4" type="video/mp4">
-            </video>
-          </div>
+      <div class="hero-body">
+        <div class="container">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-steve">
+              <video id="steve" autoplay controls muted loop playsinline width="1080" height="720"
+                style="object-fit: fill;">
+                <source src="./static/videos/bag_rollout_1080x720_web.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-chair-tp">
+              <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/box_rollout_1080x1080-9252_1080x720_web.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-fullbody">
+              <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/folding_1080x1080-10391_1080x720_web.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-blueshirt">
+              <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/handover_rollout_1080x1080_2x-10559_1080x720_web.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-mask">
+              <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/zipping_rollout_1080x1080_2x-9231_1080x720_web.mp4" type="video/mp4">
+              </video>
+            </div>
 
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <br>
 
-    <!-- Text block -->
-    <div class="container is-max-desktop"> <!-- add spacing -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="content has-text-justified">
-            <p>
-              Each policy is evaluated on five manipulation tasks in a zero-shot
-transfer setting from Franka-human demos to a bimanual UR5e. We collect and train on 200 Franka-human demos per task. 
-The results are shown below. The following show that MonoDuo is able to effectively bridge
-both the visual and physical gaps among different robots and
-human, allowing one to learn bimanual policies when only a
-single-arm robot is available.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
   </section>
 
 
 
-  <section class="section">
+  <section>
     <div class="container is-max-desktop">
+      <!-- Text block -->
+      <div class="container is-max-desktop"> <!-- add spacing -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified">
+              <p>
+                Each policy is evaluated on five manipulation tasks in a zero-shot
+                transfer setting from Franka-human demos to a bimanual UR5e. We collect and train on 200 Franka-human
+                demos per task.
+                The results are shown below. The following show that MonoDuo is able to effectively bridge
+                both the visual and physical gaps among different robots and
+                human, allowing one to learn bimanual policies when only a
+                single-arm robot is available.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h3 class="title is-4">Quantitative Performance Summary</h3>
+              <div class="content has-text-justified">
+                <p>
+                  MonoDuo achieves strong zero-shot bimanual manipulation performance despite training only from
+                  single-arm robot demonstrations.
+                  Across all five tasks, MonoDuo outperforms baselines that rely on human-only bimanual video training.
+                  The gains are most pronounced in tasks requiring complementary role coordination (e.g., <b>zip
+                    jacket</b> and <b>pack backpack</b>), highlighting the value of robot-grounded interaction data.
+                </p>
+                <p>
+                  Additionally, when limited target-robot demonstrations (25 per task) are available, few-shot
+                  finetuning dramatically improves success rates.
+                  This shows that MonoDuo is not only effective for zero-shot transfer, but also provides a strong
+                  initialization for rapid adaptation to new bimanual setups.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
       <div class="container has-text-centered">
-      <img src="./static/images/table1.png" class="overview-image" alt="MonoDuo 5-task image" />
-    </div>
+        <img src="./static/images/table1.png" class="col-image" alt="MonoDuo 5-task image" />
+
+      </div>
 
       <div class="columns is-centered">
 
         <!-- Visual Effects. -->
         <div class="column">
-          <div class="content">
-            <h2 class="title is-3">Results</h2>
-            <p>
-              TODO
-            </p>
-            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
-            </video>
-          </div>
+            <h2 class="title is-3">Impact of Wrist-Camera</h2>
+            <img src="./static/images/table2.png" class="left-image" alt="MonoDuo 5-task image" />
         </div>
         <!--/ Visual Effects. -->
 
         <!-- Matting. -->
-        <div class="column">
-          <h2 class="title is-3">Results</h2>
-          <div class="columns is-centered">
-            <div class="column content">
-              <p>
-                TODO
-              </p>
-              <video id="matting-video" controls playsinline height="100%">
-                <source src="./static/videos/matting.mp4" type="video/mp4">
-              </video>
-            </div>
-
-          </div>
+        <div class="column has-text-left">
+          <h2 class="title is-3">Few-Shot Learning</h2>
+          <img src="./static/images/table3.png" class="left-image" alt="MonoDuo 5-task image" />
         </div>
       </div>
       <!--/ Matting. -->
@@ -403,42 +415,10 @@ single-arm robot is available.
 
 
 
-      <!-- Concurrent Work. -->
-      <!-- <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Related Links</h2>
-
-          <div class="content has-text-justified">
-            <p>
-              There's a lot of excellent work that was introduced around the same time as ours.
-            </p>
-            <p>
-              <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an
-              idea similar to our windowed position encoding for coarse-to-fine optimization.
-            </p>
-            <p>
-              <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a
-                href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-              both use deformation fields to model non-rigid scenes.
-            </p>
-            <p>
-              Some works model videos with a NeRF by directly modulating the density, such as <a
-                href="https://video-nerf.github.io/">Video-NeRF</a>, <a
-                href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a
-                href="https://neural-3d-video.github.io/">DyNeRF</a>
-            </p>
-            <p>
-              There are probably many more by the time you are reading this. Check out <a
-                href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a
-                href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-            </p>
-          </div>
-        </div>
-      </div> -->
-      <!--/ Concurrent Work. -->
-
     </div>
   </section>
+
+
 
 
   <!-- <section class="section" id="BibTeX">
@@ -473,7 +453,7 @@ single-arm robot is available.
                 Commons Attribution-ShareAlike 4.0 International License</a>.
             </p> -->
             <p>
-              Template: <a href="https://github.com/nerfies/nerfies.github.io">Nerfies
+              Template code is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies
               </a>
             </p>
           </div>

@@ -165,3 +165,25 @@ body {
   margin-left: 7%;  /* keeps space between image and text */
   margin-bottom: 2rem;
 }
+
+.col-image {
+  width: 90%;
+  max-width: 1600px;
+  height: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-left: 2rem;  /* keeps space between image and text */
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.left-image {
+  width: 90%;
+  max-width: 1600px;
+  height: auto;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 0;       /* flush to left */
+  margin-right: auto;   /* prevents centering */
+}
